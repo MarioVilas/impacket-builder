@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  impacket-builder-linux-x64:
+    image: impacket-builder:linux-x64
+    build: docker/linux-x64
+  impacket-builder-wine-x86:
+    image: impacket-builder:wine-x86
+    build: docker/wine-x86
+  impacket-builder-wine-x64:
+    image: impacket-builder:wine-x64
+    build: docker/wine-x64
+
