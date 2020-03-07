@@ -15,3 +15,10 @@ sudo make all
 ```
 
 The compiled binaries will be found inside the newly created dist/ directory, under a subdirectory for each platform.
+
+# TO DO
+
+* Bundle all binaries together to save space, sharing the same portable Python interpreter.
+* Fix building from the master branch.
+* Add support for 32 bit Linux.
+* Add support for more platforms.
