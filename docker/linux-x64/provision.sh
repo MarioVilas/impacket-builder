@@ -2,6 +2,8 @@
 set -e
 set -x
 
+cd "${0%/*}"
+
 apt update
 apt upgrade -y
 apt install -y git wget python python-pip upx-ucl

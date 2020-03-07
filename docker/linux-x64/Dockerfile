@@ -1,4 +1,4 @@
 FROM ubuntu:bionic
 MAINTAINER mvilas@gmail.com
-COPY provision.sh .
-RUN chmod +x provision.sh && ./provision.sh
+COPY provision.sh build.sh /root/
+RUN chmod +x /root/provision.sh /root/build.sh && /root/provision.sh

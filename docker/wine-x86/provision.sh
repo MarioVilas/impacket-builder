@@ -2,6 +2,8 @@
 set -e
 set -x
 
+cd "${0%/*}"
+
 dpkg --add-architecture i386
 apt update
 apt upgrade -y
