@@ -12,11 +12,11 @@ services:
     build: docker/wine-x86
     entrypoint: /root/build.sh
     volumes:
-      - ./dist/wine-x86/:/root/dist/
+      - ./dist/windows-x86/:/root/dist/
   impacket-builder-wine-x64:
     image: impacket-builder:wine-x64
     build: docker/wine-x64
     entrypoint: /root/build.sh
     volumes:
-      - ./dist/wine-x64/:/root/dist/
+      - ./dist/windows-x64/:/root/dist/
 
