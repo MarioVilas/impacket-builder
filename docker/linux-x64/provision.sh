@@ -10,10 +10,8 @@ apt install -y git wget python python-pip upx-ucl
 apt autoremove -y
 
 python -m pip install --upgrade pip
-pip install --upgrade pyinstaller
+pip install --upgrade pyinstaller impacket
 
 git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket
-pip install --upgrade -r requirements.txt
-python setup.py install
 
+mkdir -p /root/dist

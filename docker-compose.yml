@@ -6,17 +6,17 @@ services:
     build: docker/linux-x64
     entrypoint: /root/build.sh
     volumes:
-      - ./dist/linux-x64/:/root/impacket/examples/dist/
+      - ./dist/linux-x64/:/root/dist/
   impacket-builder-wine-x86:
     image: impacket-builder:wine-x86
     build: docker/wine-x86
     entrypoint: /root/build.sh
     volumes:
-      - ./dist/wine-x86/:/root/impacket/examples/dist/
+      - ./dist/wine-x86/:/root/dist/
   impacket-builder-wine-x64:
     image: impacket-builder:wine-x64
     build: docker/wine-x64
     entrypoint: /root/build.sh
     volumes:
-      - ./dist/wine-x64/:/root/impacket/examples/dist/
+      - ./dist/wine-x64/:/root/dist/
 

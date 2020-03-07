@@ -17,11 +17,8 @@ DISPLAY=:0.0 wine msiexec.exe /qn /i python-2.7.16.msi
 wget -q https://bootstrap.pypa.io/get-pip.py
 DISPLAY=:0.0 wine C:\\Python27\\python.exe get-pip.py
 
-DISPLAY=:0.0 wine C:\\Python27\\python.exe -m pip install --upgrade pyinstaller pywin32
+DISPLAY=:0.0 wine C:\\Python27\\python.exe -m pip install --upgrade pyinstaller pywin32 impacket
 
 git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket
-DISPLAY=:0.0 wine C:\\Python27\\python.exe -m pip install --upgrade -r requirements.txt
-cp ../setup.py .
-DISPLAY=:0.0 wine C:\\Python27\\python.exe setup.py install
 
+mkdir -p /root/dist
