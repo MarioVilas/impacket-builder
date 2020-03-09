@@ -6,12 +6,10 @@ cd "${0%/*}"
 
 apt update
 apt upgrade -y
-apt install -y git wget python python-pip upx-ucl
+apt install -y git wget python python-pip upx
 apt autoremove -y
 
 python -m pip install --upgrade pip
 pip install --upgrade pyinstaller impacket
-
-git clone https://github.com/SecureAuthCorp/impacket.git
 
 mkdir -p /root/dist

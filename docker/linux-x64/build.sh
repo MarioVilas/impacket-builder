@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd "${0%/*}"
-cd impacket/examples
-for f in *.py
+cd /usr/local/bin
+for f in $(grep -l impacket *.py)
 do
 	python -m PyInstaller --noconfirm --clean --onefile --strip --distpath=/root/dist/ $f
 done
