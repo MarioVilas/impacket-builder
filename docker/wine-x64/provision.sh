@@ -18,6 +18,4 @@ DISPLAY=:0.0 wine64 C:\\Python27\\python.exe get-pip.py
 
 DISPLAY=:0.0 wine64 C:\\Python27\\python.exe -m pip install --upgrade pyinstaller pywin32 impacket
 
-git clone https://github.com/SecureAuthCorp/impacket.git
-
 mkdir -p /root/dist
